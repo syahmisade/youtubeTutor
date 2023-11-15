@@ -1,5 +1,7 @@
 # Arithmetic -----------------------------------------------------------
 
+from datetime import timedelta
+import numpy as np
 from datetime import date, timedelta
 x = 5
 y = 2
@@ -12,7 +14,7 @@ mod = x % y
 exp = x**y
 
 
-# ADD -----------------------
+# ADD -------------------------------------------
 
 contoh1 = "Salam"
 contoh2 = " Malaysia!"
@@ -21,7 +23,7 @@ contoh3 = contoh1 + contoh2
 # Set & Dictionary have the same method in MULTI
 
 
-# SUB ------------------------------------------------------------------
+# SUB --------------------------------------------------------------------
 
 # list
 list1 = [1, 2, 3, 4, 5]
@@ -48,7 +50,7 @@ modified_string = original_string.replace(
 # print("Modified string:", modified_string)
 
 
-# DIVI ----------------------------------------------------------------------------------
+# DIVI --------------------------------------------------------------------
 
 # List slicing
 original_list = [1, 2, 3, 4, 5, 6, 7, 8]
@@ -75,19 +77,33 @@ keys_to_keep = {'a', 'c'}
 partitioned_dict = {key: original_dict[key] for key in keys_to_keep}
 
 
-# MULTI ----------------------------------------------------
+# MULTI -----------------------------------------------------------------------------
 
-# list
+# String
+text = "Python"
+repeated_text = text * 3  # Repeats the string three times
+
+# List
 elements = [1, 2, 3]
 repeated_elements = elements * 2  # Repeats the list twice
 
-# Set
+# Tuples
+tuple_elements = ('a', 'b')
+repeated_tuple = tuple_elements * 4  # Repeats the tuple four times
+
+# Set Union
 set1 = {1, 2}
 set2 = {2, 3}
 union_set = set1 | set2  # Combines elements from both sets
 
+# Dictionary Merging
+dict1 = {'a': 1, 'b': 2}
+dict2 = {'b': 3, 'c': 4}
+# Merges the dictionaries, values from dict2 overwrite those in dict1 for common keys
+dict1.update(dict2)
 
-# MOD ------------------------------
+
+# MOD -------------------------------------------------------
 
 # String length modulus
 word = "example"
@@ -96,3 +112,34 @@ length_modulus = len(word) % 3
 # List length modulus
 my_list = [1, 2, 3, 4, 5]
 length_modulus = len(my_list) % 2
+
+# Date modulus
+today = date.today()
+days_since_monday = (today.weekday() - 0) % 7
+
+# List index modulus
+my_list = [10, 20, 30, 40, 50]
+index = 8
+value = my_list[index % len(my_list)]
+
+# Enumeration with modulus
+words = ["apple", "banana", "cherry", "date"]
+for i, word in enumerate(words):
+    if i % 2 == 0:
+        # print(word) # Uncomment this and comment None
+        None
+
+
+# EXP -----------------------------------------------
+
+# List Comprehension
+base_list = [2] * 4
+squared_list = [x**2 for x in base_list]
+
+# Matrix Power with NumPy
+matrix = np.array([[1, 2], [3, 4]])
+result_matrix = np.linalg.matrix_power(matrix, 2)
+
+# Datetime Duration Multiplication
+duration = timedelta(days=1)
+multiplied_duration = duration * 3
