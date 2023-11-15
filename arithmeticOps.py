@@ -1,8 +1,9 @@
-# Arithmetic -----------------------------------------------------------
-
 from datetime import timedelta
 import numpy as np
 from datetime import date, timedelta
+
+# Arithmetic (paling penting) ----------------------
+
 x = 5
 y = 2
 
@@ -13,6 +14,7 @@ divi = x/y  # kalau tak nak decimal, guna x//y
 mod = x % y
 exp = x**y
 
+# Ni kalau extra ---------------------------------------------------------------------
 
 # ADD -------------------------------------------
 
