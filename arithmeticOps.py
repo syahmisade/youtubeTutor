@@ -10,7 +10,8 @@ y = 2
 add = x+y
 sub = x-y
 multi = x*y
-divi = x/y  # kalau tak nak decimal, guna x//y
+divi = x/y
+floor_divi = x//y
 mod = x % y
 exp = x**y
 
