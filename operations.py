@@ -163,7 +163,7 @@ symmetric_difference_set = add_cth ^ rmv_cth  # Result: {1, 3, 5, 6, 8, 10}
 clear_cth.clear()  # Result: set()
 set_copy = add_cth.copy()  # Result: {1, 2, 3, 4, 5, 6}
 squared_set = {x**2 for x in range(1, 6)}  # Result: {1, 4, 9, 16, 25}
-is_subset = set_a.issubset(set_b)  # Result: True
-is_superset = set_b.issuperset(set_a)  # Result: True
+is_subset = set_a.issubset(set_b)  # Result: True (boleh jugak guna <=)
+is_superset = set_b.issuperset(set_a)  # Result: True (boleh jugaj guna >=)
 
 print(is_subset, is_superset)
