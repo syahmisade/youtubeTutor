@@ -18,7 +18,7 @@ num2 = 7
 a = "Apa khabar"
 b = "Malaysia"
 
-equality = x == y  # *Result: False
+equality = num1 == num2  # *Result: False
 inequality = a != b  # *Result: True
 g_than = num1 > num2  # *Result: False
 g_than_equal = num1 >= num2  # *Result: False
@@ -38,6 +38,7 @@ for_or = logic_t or logic_f  # *Result: True
 for_not = not example_logic  # *Result: False
 
 # print(for_and, for_or, for_not)
+
 
 # ---------- Bitwise operations ----------
 cth1 = 5  # Binary: 0101
