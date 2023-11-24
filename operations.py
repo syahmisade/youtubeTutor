@@ -168,33 +168,33 @@ is_superset = set_b.issuperset(set_a)  # *Result: True (boleh jugak guna >=)
 
 
 # ----- Dictionary -----
-my_dict = {'name': 'Syahmi', 'age': 22, 'city': 'Bangi'}
+bio_aku = {'nama': 'Syahmi', 'umur': 22, 'bandar': 'Bangi'}
 
-access_data = my_dict['name']  # *Result: 'Syahmi'
+access_data = bio_aku['nama']  # *Result: 'Syahmi'
 
 # --- Modify data: Adding and Deleting Data ---
-# my_dict['age'] = 22.8
-# my_dict['occupation'] = 'Software Engineer'
-# del my_dict['city']
-# popped_value = my_dict.pop('age')
+# bio_aku['umur'] = 22.3
+# bio_aku['pekerjaan'] = 'Software Engineer'
+# del bio_aku['bandar']
+# popped_value = bio_aku.pop('umur')
 
 # --- Retrieving keys, values, key-value pairs (item), copying and clear data ---
-keys = my_dict.keys()  # *Result: dict_keys(['name', 'age', 'city'])
-values = my_dict.values()  # *Result: dict_values(['John', 25, 'New York'])
-items = my_dict.items()
-# *Result: dict_items([('name', 'John'), ('age', 25), ('city', 'New York')])
-copy_dict = my_dict.copy()
-# my_dict.clear()
+keys = bio_aku.keys()  # *Result: dict_keys(['nama', 'umur', 'bandar'])
+values = bio_aku.values()  # *Result: dict_values(['Syahmi', 22, 'Bangi'])
+items = bio_aku.items()
+# *Result: dict_items([('nama', 'Syahmi'), ('umur', 22), ('bandar', 'Bangi')])
+copy_dict = bio_aku.copy()
+# bio_aku.clear()
 
 # --- Checking if a key exist ---
-key_exists = 'age' in my_dict  # *Result: True
+key_exists = 'age' in bio_aku  # *Result: True
 
 # --- Creating dictionaries dynamically ---
-numbers = {x: x**2 for x in range(5)}
+nombor = {x: x**2 for x in range(5)}
 
 # --- Handling missing key ---
-age = my_dict.get('age', 'N/A')  # Returns 'N/A' kalau 'age' key is not present
-
+umur = bio_aku.get('umur', 'N/A')
+# Returns 'N/A' kalau 'umur' key is not present
 
 # ----- Tuple -----
 my_tuple = (1, 2, 3, 'apple', 'banana')
