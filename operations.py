@@ -164,17 +164,17 @@ clear_cth.clear()  # *Result: set()
 set_copy = add_cth.copy()  # *Result: {1, 2, 3, 4, 5, 6}
 squared_set = {x**2 for x in range(1, 6)}  # *Result: {1, 4, 9, 16, 25}
 is_subset = set_a.issubset(set_b)  # *Result: True (boleh jugak guna <=)
-is_superset = set_b.issuperset(set_a)  # *Result: True (boleh jugaj guna >=)
+is_superset = set_b.issuperset(set_a)  # *Result: True (boleh jugak guna >=)
 
 
 # ----- Dictionary -----
-my_dict = {'name': 'John', 'age': 25, 'city': 'New York'}
+my_dict = {'name': 'Syahmi', 'age': 22, 'city': 'Bangi'}
 
-access_data = my_dict['name']  # *Result: 'John'
+access_data = my_dict['name']  # *Result: 'Syahmi'
 
 # --- Modify data: Adding and Deleting Data ---
-# my_dict['age'] = 26
-# my_dict['occupation'] = 'Engineer'
+# my_dict['age'] = 22.8
+# my_dict['occupation'] = 'Software Engineer'
 # del my_dict['city']
 # popped_value = my_dict.pop('age')
 
@@ -187,7 +187,7 @@ copy_dict = my_dict.copy()
 # my_dict.clear()
 
 # --- Checking if a key exist ---
-key_exists = 'age' in my_dict
+key_exists = 'age' in my_dict  # *Result: True
 
 # --- Creating dictionaries dynamically ---
 numbers = {x: x**2 for x in range(5)}
@@ -203,7 +203,6 @@ tuple2 = ('apple', 'banana')
 
 indexing = my_tuple[0]  # *Result: 1
 slicing = my_tuple[1:4]  # *Result: (2, 3, 'apple')
-my_tuple[0] = 10  # return error sbb tuple immutable
 concatenated_tuples = tuple1 + tuple2  # *Result: (1, 2, 3, 'apple', 'banana')
 repeated_tuple = my_tuple * 2
 # *Result: (1, 2, 3, 'apple', 'banana', 1, 2, 3, 'apple', 'banana')
@@ -211,6 +210,7 @@ count_tuple = my_tuple.count('apple')  # *Result: 1
 index_tuple = my_tuple.index('banana')  # *Result: 4
 tuple_length = len(my_tuple)  # *Result: 5
 element_present = 'apple' in my_tuple  # *Result: True
+# my_tuple[0] = 10  # return error sbb tuple immutable
 
 # --- Packing and Unpacking ---
 packed_tuple = 1, 'apple', 3.14  # *Result: (1, 'apple', 3.14)
