@@ -203,7 +203,7 @@ tuple2 = ('apple', 'banana')
 
 indexing = my_tuple[0]  # *Result: 1
 slicing = my_tuple[1:4]  # *Result: (2, 3, 'apple')
-my_tuple[0] = 10  # This would raise an error
+my_tuple[0] = 10  # return error sbb tuple immutable
 concatenated_tuples = tuple1 + tuple2  # *Result: (1, 2, 3, 'apple', 'banana')
 repeated_tuple = my_tuple * 2
 # *Result: (1, 2, 3, 'apple', 'banana', 1, 2, 3, 'apple', 'banana')
