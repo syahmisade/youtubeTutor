@@ -16,5 +16,6 @@ element_present = 'kucing' in cth_tuple  # *Result: True
 # cth_tuple[0] = 10  # return error sbb tuple immutable
 
 # --- Packing and Unpacking ---
-packed_tuple = 'Saya', 'Suka', 'Nasi Ayam'  # *Result: (1, 'apple', 3.14)
-x, y, z = packed_tuple  # *Result: x = 1, y = 'apple', z = 3.14
+packed_tuple = 'Saya', 'Suka', 'Nasi Ayam'
+# *Result: ('Saya', 'Suka', 'Nasi Ayam')
+x, y, z = packed_tuple  # *Result: x = 'Saya', y = 'Suka', z = 'Nasi Ayam'
