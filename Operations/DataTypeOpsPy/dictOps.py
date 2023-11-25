@@ -20,6 +20,7 @@ key_exists = 'age' in bio_aku  # *Result: False
 
 # --- Creating dictionaries dynamically ---
 nombor = {x: x**2 for x in range(5)}
+# *Result: {0: 0, 1: 1, 2: 4, 3: 9, 4: 16}
 
 # --- Handling missing key ---
 umur = bio_aku.get('umur', 'N/A')
