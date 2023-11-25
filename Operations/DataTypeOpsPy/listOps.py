@@ -14,7 +14,7 @@ anime = ["One Punch Man", "Dragon ball", "Naruto", "One Piece"]
 concatenation_list = example1 + example2  # *Result: [1, 2, 3, 4, 5, 6]
 repetition_list = example1 * 3   # *Result: [1, 2, 3, 1, 2, 3, 1, 2, 3]
 indexing_list = example3[3]  # *Result: 40
-slicing_list = example3[1:3]  # *Result: [20, 30, 40]
+slicing_list = example3[1:3]  # *Result: [20, 30]
 
 # --- List Method ---
 haiwan.append("Penguin")  # *Result: ["Panda", "Garuda", "Singa", "Penguin"]

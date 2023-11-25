@@ -9,7 +9,7 @@ str6 = "Fazz Ahmad Young Rapper kiyek"
 concatenation = str1 + " " + str2  # *Result: "Salam Sejahtera"
 repetition = str1 * 3  # *Result: "SalamSalamSalam"
 indexing = str2[0]  # *Result: "S"
-slicing = str2[2:8]  # *Result: "jahtera"
+slicing = str2[2:8]  # *Result: "jahter"
 length = len(str3)  # *Result: 18
 
 # --- String method ---
