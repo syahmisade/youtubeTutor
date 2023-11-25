@@ -186,7 +186,7 @@ items = bio_aku.items()
 # *Result: dict_items([('nama', 'Syahmi'), ('umur', 22), ('bandar', 'Bangi')])
 copy_dict = bio_aku.copy()
 # bio_aku.clear()
-key_exists = 'age' in bio_aku  # *Result: True
+key_exists = 'age' in bio_aku  # *Result: False
 
 # --- Creating dictionaries dynamically ---
 nombor = {x: x**2 for x in range(5)}
